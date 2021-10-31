@@ -2,12 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
       <style>
-        img {
-          float: left;
-          max-width: 100%;
-          height: auto;
-          width: auto\9;
-        }
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        float: left;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
       </style>
     <meta charset="utf-8">
     <title>Borong Zhang's Home Page</title>
@@ -27,19 +32,25 @@
       </nav>
       <hr>
     <h1>Borong Zhang</h1>
-    <img src="images/borong.png" style="Height:180px;margin-right:30px">
-    <p><b>Email address:</b><br> bzhang388 &ltat&gt math &ltdot&gt wisc &ltdot&gt edu</p>
-    <p><b>Postal address:</b><br>
-    <a href="https://math.wisc.edu/">Department of Mathematics </a><br>
-    University of Wisconsin-Madison <br>
-    480 Lincoln Drive <br>
-    Madison WI 53706
-    <p><b>Offce:</b> 818 Van Vleck</p>
+    <div class="clearfix">
+      <div class="box">
+        <img src="images/borong.png" style="Height:220px; margin-right:30px;">
+      </div>
+      <div class="box">
+        <p><b>Email address:</b><br> bzhang388 &ltat&gt wisc &ltdot&gt edu</p>
+        <p><b>Postal address:</b><br>
+        <a href="https://math.wisc.edu/">Department of Mathematics </a><br>
+        University of Wisconsin-Madison <br>
+        480 Lincoln Drive <br>
+        Madison WI 53706
+        <p><b>Offce:</b> 818 Van Vleck</p>
+      </div>
+    </div>
     <hr>
     <h2>About Me</h2>
     <p>I am a second-year <a href="https://hilbert.math.wisc.edu/wiki/index.php/Applied_and_Computational_Mathematics">Applied Mathematics</a> PhD student at the University of Wisconsin-Madison.<br>
       My advisors are <a href="https://people.math.wisc.edu/~qinli/">Dr. Qin Li</a> and <a href="https://people.math.wisc.edu/~lzepeda/">Dr. Leonardo Andrés Zepeda Núñez</a>.
-      <br>I received my B.A. in Applied Mathematics and Computer Science from University of California, Berkeley in 2020.
+      <br>I received my B.A. in Applied Mathematics and Computer Science from UC Berkeley in 2020.
       <br>
 
   </body>
