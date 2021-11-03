@@ -2,7 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <style>
-      div {margin: 10px 80px; font-size: 16px}
+    .specification {
+      font-size: 16px
+    }
+    @media only screen and (max-width:350px) {
+      .specification {
+        margin: 10px 80px; font-size: 16px
+      }
+    }
       nav {font-size: 16px}
       ul {
         list-style-type: none;
@@ -25,7 +32,7 @@
     <link rel="manifest" href="favicon_io/site.webmanifest">
   </head>
     <body>
-      <div>
+      <div class="specification">
         <nav class="bar">
           <ul class="main-nav">
             <li><a href="index.html">Home</a></li>
