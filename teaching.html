@@ -12,38 +12,84 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <style>
-    body {
-      margin: 10px 80px; font-size: 18px
-    }
+          body {
+            margin: 10px 80px;
+            font-size: 18px;
+          }
 
-    @media only screen and (max-width: 600px) {
-    body {
-        margin: 0px 5px; font-size: 16px
-      }
-    }
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-      li {float: left;}
-      li a {display: block; text-align: center; padding: 24px 12px 0px;}
-    </style>
-  </head>
-    <body>
+          @media only screen and (max-width: 600px) {
+            body {
+              margin: 0px 5px;
+              font-size: 16px;
+            }
+          }
+
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+          }
+
+          li {
+            float: left;
+          }
+
+          li a {
+            display: block;
+            text-align: center;
+            padding: 24px 12px 0px;
+          }
+
+          .section {
+            margin-bottom: 20px;
+          }
+
+          .section p {
+            margin-left: 20px;
+          }
+
+          .section p:first-child {
+            font-weight: bold;
+            margin-left: 0;
+          }
+
+          .section p.topic {
+            margin-left: 40px;
+          }
+        </style>
+      </head>
+      <body>
         <nav class="bar">
           <ul class="main-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
-            <li><a href="notes.html">Notes</a></li>
-            <li><a href="teaching.html">Teaching</a> </li>
-            <li><a href="cv.html">CV</a> </li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="borongCV.pdf">CV</a></li>
           </ul>
         </nav>
         <hr>
         <img src="images/celeste.webp" width="100%" alt="celeste">
+        <div class="section">
+          <p>Teaching</p>
+          <p>Math 221: Calculus and Analytic Geometry I, TA &mdash; Fall 2020</p>
+          <p>Math 222: Calculus and Analytic Geometry II, TA &mdash; Spring 2021</p>
+          <p>Math 521: Analysis I, TA &mdash; Summer 2022</p>
+          <p>Math 211: Calculus, TA &mdash; Fall 2022</p>
+          <p>Math 234: Calculus - Functions of Several Variables, TA &mdash; Spring 2023</p>
+          <p>Math 112: College Algebra, Instructor &mdash; Fall 2023-Fall 2024</p>
+          <p>Math 211: Calculus, Head TA &mdash; Spring 2025</p>
+        </div>
 
-        <p> Peer advising (Spring 2019):  A comprehensive <a href="teaching/ucb/coursemap.html">course guide</a> for undergraduate level math courses at UC Berkeley.</p>
+        <div class="section">
+          <p>Mentoring</p>
+          <p>Peer advising (Spring 2019): A comprehensive <a href="teaching/ucb/coursemap.html">course guide</a> for undergraduate level math courses at UC Berkeley.</p>
+          <p>Directed Reading Program, Mentor &mdash; Fall 2024</p>
+          <p class="topic">Topic: Solving the Inverse Scattering Problem: Classical Methods and Machine Learning</p>
+          <p>Directed Reading Program, Mentor &mdash; Spring 2025</p>
+          <p class="topic">Topic: Stochastic Differential Equations: Score-Based Diffusion Models</p>
+        </div>
+
+
   </body>
 </html>
