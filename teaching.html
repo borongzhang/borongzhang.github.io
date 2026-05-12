@@ -11,68 +11,26 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
-    <style>
-      body {
-        margin: 10px 80px;
-        font-size: 18px;
-      }
-
-      @media only screen and (max-width: 600px) {
-        body {
-          margin: 0px 5px;
-          font-size: 16px;
-        }
-      }
-
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-
-      li {
-        float: left;
-      }
-
-      li a {
-        display: block;
-        text-align: center;
-        padding: 24px 12px 0px;
-      }
-
-      .section {
-        margin-bottom: 20px;
-      }
-
-      .section p {
-        margin-left: 20px;
-      }
-
-      .section p:first-child {
-        font-weight: bold;
-        margin-left: 0;
-      }
-
-      .section p.topic {
-        margin-left: 40px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="teaching-page">
+    <header class="site-header">
     <nav class="bar">
       <ul class="main-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="research.html">Research</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="teaching.html" aria-current="page">Teaching</a></li>
         <li><a href="borongCV.pdf">CV</a></li>
       </ul>
     </nav>
-    <hr>
-    <img src="images/celeste.webp" width="100%" alt="celeste">
+    </header>
 
-    <div class="section">
-      <p>Teaching</p>
+    <main class="page">
+    <img class="hero-image" src="images/celeste.webp" width="100%" alt="celeste">
+
+    <section class="section">
+      <h2>Teaching</h2>
+      <div class="entry-list">
       <p>Math 718: Randomized Linear Algebra and Applications — Spring 2026</p>
       <p>Math 340: Elementary Matrix and Linear Algebra, TA — Fall 2025</p>
       <p>Math 211: Calculus, Head TA — Spring 2025</p>
@@ -82,10 +40,12 @@
       <p>Math 521: Analysis I, TA — Summer 2022</p>
       <p>Math 222: Calculus and Analytic Geometry II, TA — Spring 2021</p>
       <p>Math 221: Calculus and Analytic Geometry I, TA — Fall 2020</p>
-    </div>
+      </div>
+    </section>
 
-    <div class="section">
-      <p>Mentoring</p>
+    <section class="section">
+      <h2>Mentoring</h2>
+      <div class="entry-list">
       <p>Graduate Peer Mentor — Fall 2025</p>
       <p>Directed Reading — Summer 2025-Fall 2025</p>
       <p class="topic">Topic: Stochastic Multigrid Methods for Ptychographic Phase Retrieval</p>
@@ -94,6 +54,8 @@
       <p>Directed Reading Program, Mentor — Fall 2024</p>
       <p class="topic">Topic: Solving the Inverse Scattering Problem: Classical Methods and Machine Learning</p>
       <p>Peer advising (Spring 2019): A comprehensive <a href="teaching/ucb/coursemap.html">course guide</a> for undergraduate level math courses at UC Berkeley.</p>
-    </div>
+      </div>
+    </section>
+    </main>
   </body>
 </html>

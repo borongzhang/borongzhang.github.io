@@ -13,39 +13,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
-
-    <style>
-        body {
-            margin: 10px 80px;
-            font-size: 18px;
-        }
-        @media only screen and (max-width: 600px) {
-            body {
-                margin: 0px 5px;
-                font-size: 16px;
-            }
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        nav ul li {
-            float: left;
-        }
-        nav ul li a {
-            display: block;
-            text-align: center;
-            padding: 24px 12px 0px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
+<body class="home-page">
+    <header class="site-header">
         <nav>
             <ul class="main-nav">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="research.html">Research</a></li>
                 <li><a href="teaching.html">Teaching</a></li>
                 <li><a href="borongCV.pdf">CV</a></li>
@@ -53,15 +27,14 @@
         </nav>
     </header>
 
-    <hr>
-
-    <main>
+    <main class="page">
+        <section class="profile">
         <h1>Borong Zhang</h1>
 
         <table>
             <tr>
                 <td>
-                    <img src="images/borong.webp" alt="Borong Zhang" height="240" width="240" style="margin:0px 20px 0px 0px">
+                    <img src="images/borong.webp" alt="Borong Zhang" height="240" width="240">
                 </td>
                 <td>
                     <p>Email address:<br> bzhang388 &lt;at&gt; wisc &lt;dot&gt; edu</p>
@@ -82,7 +55,9 @@
                 </td>
             </tr>
         </table>
+        </section>
 
+        <section class="section content-panel">
         <h2>About Me</h2>
         <p>
             I am a fifth-year Ph.D. candidate in
@@ -113,6 +88,7 @@
             Georgia Institute of Technology as a Visiting Assistant Professor, where I will work with
             <a href="https://sites.google.com/view/weizhumath/home">Wei Zhu</a>.
         </p>
+        </section>
 
     </main>
 </body>
