@@ -202,6 +202,17 @@ p {
   border-top: 1px solid var(--line);
 }
 
+.entry-group h3 {
+  margin: 0 0 6px;
+  color: #171918;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.entry-group + .entry-group {
+  margin-top: 18px;
+}
+
 .entry-list p {
   margin: 0;
   padding: 6px 0;
