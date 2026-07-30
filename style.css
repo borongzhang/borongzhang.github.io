@@ -116,7 +116,7 @@ p {
 
 .profile {
   display: grid;
-  grid-template-columns: minmax(0, 270px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
   gap: 26px;
   align-items: start;
   margin-top: 4px;
@@ -127,6 +127,7 @@ p {
 
 .profile h1 {
   grid-column: 1 / -1;
+  font-size: clamp(2.2rem, 6vw, 3.2rem);
 }
 
 .profile table,
@@ -143,7 +144,7 @@ p {
 .profile img {
   display: block;
   width: 100%;
-  max-width: 240px;
+  max-width: 360px;
   height: auto;
   margin: 0;
   border-radius: 2px;
