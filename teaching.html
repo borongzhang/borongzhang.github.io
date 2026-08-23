@@ -14,60 +14,69 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="teaching-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-    <nav class="bar">
+    <nav class="bar" aria-label="Primary navigation">
       <ul class="main-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="teaching.html" aria-current="page">Teaching</a></li>
-        <li><a href="borongCV.pdf">CV</a></li>
+        <li><a href="cv.html">CV</a></li>
       </ul>
     </nav>
     </header>
 
-    <main class="page">
-    <img class="hero-image" src="images/celeste.webp" width="100%" alt="celeste">
+    <main id="main-content" class="page" tabindex="-1">
+    <h1 class="page-title">Teaching</h1>
+    <img class="hero-image" src="images/celeste.webp" alt="">
 
-    <section class="section">
-      <h2>Teaching Experience</h2>
+    <section class="section" aria-labelledby="teaching-experience-heading">
+      <h2 id="teaching-experience-heading">Teaching Experience</h2>
 
       <div class="entry-group">
         <h3>Georgia Institute of Technology</h3>
-        <div class="entry-list">
-          <p>Math 2550: Introduction to Multivariable Calculus, Instructor — Fall 2026</p>
-        </div>
+        <ul class="entry-list" role="list">
+          <li>Math 2550: Introduction to Multivariable Calculus, Instructor — Fall 2026</li>
+        </ul>
       </div>
 
       <div class="entry-group">
         <h3>University of Wisconsin–Madison</h3>
-        <div class="entry-list">
-          <p>Math 718: Randomized Linear Algebra and Applications, TA — Spring 2026</p>
-          <p>Math 340: Elementary Matrix and Linear Algebra, TA — Fall 2025</p>
-          <p>Math 211: Calculus, Head TA — Spring 2025</p>
-          <p>Math 112: College Algebra, Instructor — Fall 2023, Spring 2024, Fall 2024</p>
-          <p>Math 234: Calculus: Functions of Several Variables, TA — Spring 2023</p>
-          <p>Math 211: Calculus, TA — Fall 2022</p>
-          <p>Math 521: Analysis I, TA — Summer 2022</p>
-          <p>Math 222: Calculus and Analytic Geometry II, TA — Spring 2021</p>
-          <p>Math 221: Calculus and Analytic Geometry I, TA — Fall 2020</p>
-        </div>
+        <ul class="entry-list" role="list">
+          <li>Math 718: Randomized Linear Algebra and Applications, TA — Spring 2026</li>
+          <li>Math 340: Elementary Matrix and Linear Algebra, TA — Fall 2025</li>
+          <li>Math 211: Calculus, Head TA — Spring 2025</li>
+          <li>Math 112: College Algebra, Instructor — Fall 2023, Spring 2024, Fall 2024</li>
+          <li>Math 234: Calculus: Functions of Several Variables, TA — Spring 2023</li>
+          <li>Math 211: Calculus, TA — Fall 2022</li>
+          <li>Math 521: Analysis I, TA — Summer 2022</li>
+          <li>Math 222: Calculus and Analytic Geometry II, TA — Spring 2021</li>
+          <li>Math 221: Calculus and Analytic Geometry I, TA — Fall 2020</li>
+        </ul>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Mentoring &amp; Outreach</h2>
+    <section class="section" aria-labelledby="mentoring-heading">
+      <h2 id="mentoring-heading">Mentoring &amp; Outreach</h2>
 
       <div class="entry-group">
         <h3>University of Wisconsin–Madison</h3>
-        <div class="entry-list">
-          <p>Graduate Peer Mentor — Fall 2025</p>
-          <p>Directed Reading Program, Mentor — Spring 2025</p>
-          <p class="topic">Topic: Stochastic Differential Equations: Score-Based Diffusion Models</p>
-          <p>Directed Reading Program, Mentor — Fall 2024</p>
-          <p class="topic">Topic: Solving the Inverse Scattering Problem: Classical Methods and Machine Learning</p>
-        </div>
+        <ul class="entry-list" role="list">
+          <li>Graduate Peer Mentor — Fall 2025</li>
+          <li>
+            Directed Reading Program, Mentor — Spring 2025
+            <span class="topic">Topic: Stochastic Differential Equations: Score-Based Diffusion Models</span>
+          </li>
+          <li>
+            Directed Reading Program, Mentor — Fall 2024
+            <span class="topic">Topic: Solving the Inverse Scattering Problem: Classical Methods and Machine Learning</span>
+          </li>
+        </ul>
       </div>
     </section>
     </main>
+    <footer class="site-footer">
+      <p>Report accessibility problems: <a href="mailto:gtaccessibility@gatech.edu">gtaccessibility@gatech.edu</a></p>
+    </footer>
   </body>
 </html>

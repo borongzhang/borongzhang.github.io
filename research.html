@@ -14,56 +14,61 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="research-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-    <nav class="bar">
+    <nav class="bar" aria-label="Primary navigation">
       <ul class="main-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="research.html" aria-current="page">Research</a></li>
         <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="borongCV.pdf">CV</a></li>
+        <li><a href="cv.html">CV</a></li>
       </ul>
     </nav>
     </header>
 
-    <main class="page">
-    <img class="hero-image" src="images/sibelius.webp" width="100%" alt="bluedot">
+    <main id="main-content" class="page" tabindex="-1">
+    <h1 class="page-title">Research</h1>
+    <img class="hero-image" src="images/sibelius.webp" alt="">
 
-    <section class="section">
-    <h2>Selected Publications</h2>
+    <section class="section" aria-labelledby="publications-heading">
+    <h2 id="publications-heading">Selected Publications</h2>
     <div class="publication-list">
 
-    <div class="publication">
-      <p class="publication-title">MAGPIE: Multilevel-Adaptive-Guided Solver for Ptychographic Phase Retrieval</p>
+    <article class="publication" aria-labelledby="magpie-title">
+      <h3 id="magpie-title" class="publication-title">MAGPIE: Multilevel-Adaptive-Guided Solver for Ptychographic Phase Retrieval</h3>
       <p class="publication-authors">Borong Zhang, Qin Li, Zichao Wendy Di</p>
       <p class="publication-journal">SIAM Journal on Scientific Computing (SISC), accepted pending publication</p>
       <p class="publication-link">
-        <a href="https://arxiv.org/abs/2504.10118" target="_blank">View Paper</a> |
-        <a href="https://github.com/borongzhang/magpie_ptychography" target="_blank">View Code</a>
+        <a href="https://arxiv.org/abs/2504.10118">MAGPIE paper</a> |
+        <a href="https://github.com/borongzhang/magpie_ptychography">MAGPIE code</a>
       </p>
-    </div>
+    </article>
 
-    <div class="publication">
-      <p class="publication-title">Back-Projection Diffusion: Solving the Wideband Inverse Scattering Problem with Diffusion Models</p>
+    <article class="publication" aria-labelledby="back-projection-title">
+      <h3 id="back-projection-title" class="publication-title">Back-Projection Diffusion: Solving the Wideband Inverse Scattering Problem with Diffusion Models</h3>
       <p class="publication-authors">Borong Zhang, Martín Guerra, Qin Li, Leonardo Zepeda-Núñez</p>
       <p class="publication-journal">Computer Methods in Applied Mechanics and Engineering (CMAME), Volume 443, August 2025, 118036</p>
       <p class="publication-link">
-        <a href="https://doi.org/10.1016/j.cma.2025.118036" target="_blank">View Paper</a> |
-        <a href="https://github.com/borongzhang/back_projection_diffusion" target="_blank">View Code</a>
+        <a href="https://doi.org/10.1016/j.cma.2025.118036">Back-Projection Diffusion paper</a> |
+        <a href="https://github.com/borongzhang/back_projection_diffusion">Back-Projection Diffusion code</a>
       </p>
-    </div>
+    </article>
 
-    <div class="publication">
-      <p class="publication-title">Solving the Wide-Band Inverse Scattering Problem via Equivariant Neural Networks</p>
+    <article class="publication" aria-labelledby="equivariant-networks-title">
+      <h3 id="equivariant-networks-title" class="publication-title">Solving the Wide-Band Inverse Scattering Problem via Equivariant Neural Networks</h3>
       <p class="publication-authors">Borong Zhang, Leonardo Zepeda-Núñez, Qin Li</p>
       <p class="publication-journal">Journal of Computational and Applied Mathematics (JCAM), Volume 451, December 2024, 116050</p>
       <p class="publication-link">
-        <a href="https://doi.org/10.1016/j.cam.2024.116050" target="_blank">View Paper</a> |
-        <a href="https://github.com/borongzhang/ISP_baseline" target="_blank">View Code</a>
+        <a href="https://doi.org/10.1016/j.cam.2024.116050">Equivariant Neural Networks paper</a> |
+        <a href="https://github.com/borongzhang/ISP_baseline">Equivariant Neural Networks code</a>
       </p>
-    </div>
+    </article>
     </div>
     </section>
     </main>
 
+    <footer class="site-footer">
+      <p>Report accessibility problems: <a href="mailto:gtaccessibility@gatech.edu">gtaccessibility@gatech.edu</a></p>
+    </footer>
   </body>
 </html>

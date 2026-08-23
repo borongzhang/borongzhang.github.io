@@ -16,43 +16,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="home-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-        <nav>
+        <nav aria-label="Primary navigation">
             <ul class="main-nav">
                 <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="research.html">Research</a></li>
                 <li><a href="teaching.html">Teaching</a></li>
-                <li><a href="borongCV.pdf">CV</a></li>
+                <li><a href="cv.html">CV</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="page">
-        <section class="profile">
-        <h1>Borong Zhang</h1>
+    <main id="main-content" class="page" tabindex="-1">
+        <section class="profile" aria-labelledby="profile-heading">
+        <h1 id="profile-heading">Borong Zhang</h1>
 
-        <table>
-            <tr>
-                <td>
-                    <img src="images/borong.webp" alt="Borong Zhang" height="240" width="240">
-                </td>
-                <td>
-                    <p>
-                        Visiting Assistant Professor<br>
-                        <a href="https://math.gatech.edu/">School of Mathematics</a><br>
-                        Georgia Institute of Technology
-                    </p>
-                    <p>Email address:<br> borongzhang &lt;at&gt; gatech &lt;dot&gt; edu</p>
-                    <p>Links:<br>
-                        <a href="https://borongzhang.com">Homepage</a> |
-                        <a href="https://github.com/borongzhang">GitHub</a> |
-                        <a href="https://www.linkedin.com/in/borong-zhang-074916351/">LinkedIn</a> <br>
-                        <a href="https://scholar.google.com/citations?user=GN-PKeYAAAAJ&amp;hl=en">Google Scholar</a> |
-                        <a href="https://www.researchgate.net/profile/Borong-Zhang-2?ev=hdr_xprf">ResearchGate</a>
-                    </p>
-                </td>
-            </tr>
-        </table>
+        <div class="profile-photo">
+            <img src="images/borong.webp" alt="Portrait of Borong Zhang" height="240" width="240">
+        </div>
+        <div class="profile-details">
+            <p>
+                Visiting Assistant Professor<br>
+                <a href="https://math.gatech.edu/">School of Mathematics</a><br>
+                Georgia Institute of Technology
+            </p>
+            <p>Email address:<br> borongzhang &lt;at&gt; gatech &lt;dot&gt; edu</p>
+            <p>Links:<br>
+                <a href="https://borongzhang.com">Homepage</a> |
+                <a href="https://github.com/borongzhang">GitHub</a> |
+                <a href="https://www.linkedin.com/in/borong-zhang-074916351/">LinkedIn</a> <br>
+                <a href="https://scholar.google.com/citations?user=GN-PKeYAAAAJ&amp;hl=en">Google Scholar</a> |
+                <a href="https://www.researchgate.net/profile/Borong-Zhang-2?ev=hdr_xprf">ResearchGate</a>
+            </p>
+        </div>
         </section>
 
         <section class="section content-panel">
@@ -84,5 +81,8 @@
         </section>
 
     </main>
+    <footer class="site-footer">
+        <p>Report accessibility problems: <a href="mailto:gtaccessibility@gatech.edu">gtaccessibility@gatech.edu</a></p>
+    </footer>
 </body>
 </html>
